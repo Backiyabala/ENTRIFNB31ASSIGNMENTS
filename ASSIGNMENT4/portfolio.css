@@ -1,0 +1,365 @@
+    /* these styles applies to the whole web page */
+* {
+    font-family: 'lora';
+    color: white;
+    height: fit-content;
+}
+
+/* class selector denoted by .  */
+.portfolio {
+    border: 5px solid #e48d13;
+    background-color: #023855;
+    margin: auto;
+    border-radius: 1%;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+/* nested selector */
+.navbar a {
+    align-content: center;
+    text-decoration: none;
+    margin: 3px;
+}
+
+.iconwithnav {
+    text-align: end;
+    justify-content: center;
+    font-size: medium;
+}
+
+.fa {
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: #f2a539;
+    animation-name: fornavigation;
+    animation-duration: 1s;
+}
+
+@keyframes fornavigation {
+    100% {
+        color: white;
+        background-color: #e48d13;
+        blur: -5px;
+    }
+}
+
+.home {
+    display: flex;
+}
+
+.ProfessionalIntro {
+    height: max-content;
+    align-items: center;
+}
+
+.background1 {
+    background-image: url(pixel-developer-girl-stockcake.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro {
+    padding: 1%;
+    text-align: left;
+}
+
+.intro b,
+.intro em {
+    color: chartreuse;
+}
+
+button {
+    background-color: #e48d13;
+}
+
+.project button {
+    border-radius: 5px;
+    outline: 1px solid #e48d13;
+    padding: 1%;
+    margin: 10px;
+    font-size: 15px;
+    box-shadow: 5px 10px 20px #e48d13;
+}
+
+.intro button:hover {
+    animation: forbuttons;
+    animation-duration: 2s;
+}
+
+@keyframes forbuttons {
+    from {
+        font-size: 15px;
+    }
+
+    to {
+        font-size: 20px;
+    }
+}
+
+.about_me {
+    /* display:flex; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* flex-direction: row-reverse; */
+    height: fit-content;
+    background-size: cover;
+    /* absolute url used here for the background */
+    background-image: url(Copy\ of\ Navy\ Blue\ Modern\ Developer\ LinkedIn\ Banner.png);
+    background-repeat: no-repeat;
+}
+
+.biodata img {
+    margin: 10%;
+    border-radius: 30%;
+    width: 35%;
+    border-style: groove;
+    rotate: -45deg;
+}
+
+.biodata {
+    text-align: center;
+    margin: auto auto;
+}
+
+.education {
+    align-self: center;
+    border: 2px currentColor;
+    background-color: #e48d13;
+    height: max-content;
+    width: fit-content;
+}
+
+.education p {
+    margin: 5px;
+}
+
+.education dt {
+    padding-bottom: 5px;
+    color: black;
+    margin: 5px;
+}
+
+.project {
+    height:max-content;
+    width:100%;
+    /* display: grid; */
+    /* width: 90%; */
+    /* justify-content: space-between; */
+    /* margin: auto; */
+}
+
+.project .card {
+    border: 2px inset black;
+    background-color: #e48d13;
+    box-shadow: 10px 10px 6px #cd903a;
+    background-image: linear-gradient(to bottom, #e8b772, #e48d13);
+}
+
+.project .card img {
+    /* height: 30%; */
+    /* width: 50%; */
+    align-self: center;
+}
+
+.project .card i,
+.project .card-title {
+    text-decoration: underline;
+    color: black;
+    text-align: center;
+}
+
+.skills {
+    display: block;
+}
+
+.skills .img {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactinfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.completion {
+    margin: 0 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact_img {
+    display: flex;
+    justify-content: flex-end;
+    /* border:1px solid white; */
+}
+
+.contact_img img {
+    margin: 2%;
+}
+
+.handpointer {
+    position: relative;
+    animation: shake 1s infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-10deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(10deg);
+    }
+}
+
+.contact_img img:hover {
+    background-color: #e48d13;
+}
+
+form input,
+form textarea {
+    color: black;
+}
+
+.bodyofsuccess {
+    background-color: aqua;
+}
+
+.fullbody h1,
+.fullbody p {
+    color: black;
+}
+
+.fullbody {
+    height: 50vh;
+    width: 50%;
+    text-align: center;
+    margin: 10% auto;
+    border: 5px ridge rgb(130, 12, 239);
+    background-color: antiquewhite;
+}
+
+ /* mobile phone view  */
+@media screen and (min-width:320px) and (max-width:767px) {
+    .iconwithnav i{
+        display:block;
+    }
+    i:hover{
+        display:block;
+    }
+    .iconwithnav nav {
+        display: none;
+    }
+    #about_page{
+        display:block;
+    }
+    .project .card{
+        margin-bottom:30px;
+    }
+    #skill_page{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        background-color: aliceblue;
+    }
+    .contact{
+        display:block;
+    }
+    .contactform button{
+        padding:10px;
+        margin:20px 0;
+    }
+    .contactinfo img{
+        height:30px;
+        width:30px;
+    }
+    .handpointer img{
+        height:30px;
+        width:30px;
+    }
+    .biodata img{
+        rotate:none;
+        animation:shake 0.5s 4s;
+    }
+} 
+/* Tab view */
+@media screen and (min-width:768px) and (max-width:1024px){
+    .iconwithnav i{
+        display:none;
+    }
+    #skill_page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: aliceblue;
+    }
+    .contact{
+        display:grid;
+        grid-template-columns:auto auto;
+    }
+    .contactinfo{
+        width:fit-content;
+    }
+    .completion{
+        /* text-align:right; */
+        justify-content: end;
+    }
+
+}
+/* Laptop view */
+@media screen and (min-width:1025px) {
+   .navbar{
+    display:flex;
+    flex-direction: column;
+    font-size:large;
+   }  
+   .portfolio{
+    font-size:medium;
+   }  
+   .biodata img{
+    rotate:none;
+    animation:shake 1s 4s;
+    height:30%;
+    width:30%;
+   }
+   .project .card{
+    width:30%;
+    margin:10px;
+   }
+   .skills img{
+      display:inline-block;
+      margin:5% auto;
+      border:1px solid whitesmoke;
+      padding:1%;
+      background-color:bisque;
+   }
+}
