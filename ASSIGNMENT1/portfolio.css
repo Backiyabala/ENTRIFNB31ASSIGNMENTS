@@ -1,0 +1,129 @@
+/* these styles applies to the whole web page */
+*{
+    font-family: 'Times New Roman', Times, serif;
+    /* margin:auto; */
+    color: rgb(230, 218, 218);
+    height: fit-content;
+ 
+}
+/* class selector denoted by .  */
+.portfolio{
+        border: 5px solid #e48d13;
+        background-color: #023855;
+        width: 750px;
+        /* margin-top: 10px; */
+        margin:auto;
+        border-radius: 1%;
+}
+/* by combined selector, padding applies to each section */
+.home,.about_me, .projects,.skills,.contact{        
+    padding: 10px;    
+}
+.navbar{
+    display:inline-flex;
+    flex-direction:column;
+    text-align: center;
+    margin:1%;
+
+}
+/* nested selector */
+.navbar a{
+    text-decoration: none;
+    padding: 5%;
+    width: 80px;height:90px;
+    
+}
+.intro em, button{
+    color:#e48d13;
+}
+.home{
+    display:flex;
+}
+.intro{
+    padding:100px;
+}
+.intro button, .project button{
+    border-radius: 5px;
+    outline:1px solid #e48d13;
+    padding:1%;
+    margin:10px;
+    font-size: 15px;
+    box-shadow: 5px 10px 20px #e48d13;
+}
+
+.about_me{
+    display:flex;
+    flex-direction: row-reverse;
+}
+.about_me .background{
+    height:50vh;
+    background-size:cover;
+    margin:0% 0%;
+    /* absolute url used here for the background */
+    background-image: url(backgroundimage.jpg);
+    background-repeat: no-repeat;
+    opacity:0.75;
+
+}
+.biodata img{
+        margin: 10%;
+        border-radius: 50%;
+        border: 10px;
+        width: 35%;
+        border-style: groove;     
+}
+.biodata{
+    display:block;
+    text-align: center;
+    justify-content: center;
+}
+.education{
+    border:2px currentColor;
+    background-color: #e48d13;
+    height:50vh;
+    width:500px;
+}
+.education p{
+    margin:5px;
+}
+.education dt{
+    padding-bottom: 5px;
+    color: black;
+    margin:5px;
+} 
+.skills.img{
+    display:flex;
+    position: relative;
+
+}
+.project{
+    display:flex;
+    margin-bottom:30px ;
+    justify-content: space-evenly;
+}
+.project .card{
+    border:2px inset hsl(35, 94%, 49%);
+    width:40%; 
+    height:300px;
+    background-color: #e48d13;
+    box-shadow: 10px 10px 6px #e48d13;
+}
+
+.project .card i,.project .card h1{
+    color:black;
+    text-align: center;
+}
+.project p{
+    padding: 10px;
+}
+.card{
+    background-image: linear-gradient(to bottom,#e1b271, #e48d13);
+}
+.contact_img{
+    display: flex;
+    margin: 10px;
+    flex-direction:row;
+    justify-content:flex-end;
+    padding: 10px;
+}
+
