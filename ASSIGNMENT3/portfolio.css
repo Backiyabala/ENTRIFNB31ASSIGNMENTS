@@ -1,0 +1,224 @@
+
+/* these styles applies to the whole web page */
+*{
+    font-family: 'lora';
+    color: rgb(230, 218, 218);
+    height: fit-content;
+ 
+}
+
+/* class selector denoted by .  */
+.portfolio{
+        border: 5px solid #e48d13;
+        background-color: #023855;
+        width: 750px;
+        margin:auto;
+        border-radius: 1%;
+}
+/* by combined selector, padding applies to each section */
+.home,.about_me, .projects,.skills,.contact{        
+    padding: 10px;    
+}
+
+.navbar{
+    display:flex;
+    flex-direction:column;
+    /* text-align: center; */
+    justify-content:space-evenly;
+    height:450px;
+}
+/* nested selector */
+.navbar a{
+    align-content: center;
+    text-decoration: none;
+    /* border:1px solid ; */
+}
+.navbar a:hover{
+    background-color:#e48d13;
+    animation-name: fornavigation;
+    animation-duration: 0.5s;
+}
+@keyframes fornavigation{
+    100%{
+    font-size:large;
+       }  
+}
+.intro em, button{
+    color:#e48d13;
+}
+.home{
+    display:flex;
+    /* height:fit-content; */
+}
+
+.intro{
+    padding:100px;
+}
+.intro button, .project button{
+    border-radius: 5px;
+    outline:1px solid #e48d13;
+    padding:1%;
+    margin:10px;
+    font-size: 15px;
+    box-shadow: 5px 10px 20px #e48d13;
+
+}
+.intro button:hover{
+        animation: forbuttons;
+        animation-duration: 2s;
+}
+
+@keyframes forbuttons{
+    from{font-size: 15px;}
+    to{font-size: 20px;}
+}
+.about_me{
+    /* display:flex; */
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    /* flex-direction: row-reverse; */
+}
+.about_me .background{
+    height:50vh;
+    background-size:cover;
+    margin:0% 0%;
+    /* absolute url used here for the background */
+    background-image: url(backgroundimage.jpg);
+    background-repeat: no-repeat;
+    opacity:0.75;
+
+}
+
+.biodata img{
+        margin: 10%;
+        border-radius: 50%;
+        border: 10px;
+        width: 35%;
+        border-style: groove;   
+}
+.biodata{
+    display:block;
+    text-align: center;
+    justify-content: center;
+}
+.education{
+    border:2px currentColor;
+    background-color: #e48d13;
+    height:50vh;
+    width:500px;
+}
+.education p{
+    margin:5px;
+}
+.education dt{
+    padding-bottom: 5px;
+    color: black;
+    margin:5px;
+} 
+.skills.img{
+    display:flex;
+    position: relative;
+    
+}
+.project{
+    display:flex;
+    margin-bottom:30px ;
+    justify-content: space-evenly;
+}
+.project .card{
+    border:2px inset hsl(35, 94%, 49%);
+    width:40%; 
+    height:600px;
+    background-color: #e48d13;
+    box-shadow: 10px 10px 6px #e48d13;
+}
+
+.project .card i,.project .card h1{
+    color:black;
+    text-align: center;
+}
+.project p{
+    padding: 10px;
+}
+.card{
+    background-image: linear-gradient(to bottom,#e8b772, #e48d13);
+}
+.contact{
+    display: flex;
+}
+.contact_img{
+    display:flex;
+    flex-basis: 30%;
+    margin:auto 20px;
+    flex-direction:column;
+ }   
+.contact_img img{
+    width:50px;
+    transition: width 2s, height 50px;
+}
+.contact_img img:hover{
+   background-color: #a8bac6;
+   width: 70px;
+}
+.contact_form{
+   flex-basis: 60%;
+}
+.contact_form button{
+    border-radius: 5px; 
+    color: black;
+    background-color: #e48d13;
+    padding: 5px;
+}
+.contact_form button:hover{
+    color:white;
+    padding:10px;
+}
+fieldset{
+    text-align: center;
+}
+tr{
+    display:flex;
+}
+input, option,textarea,select{
+    color:black;
+}
+td:first-child{
+    width:40%;
+    padding: 10px;
+    text-align:start;
+}
+td:nth-child(2){
+    width: 50%;
+    padding:10px;
+    color:black;
+}
+@media(max-width:600px){
+    .home,.skills,.project,.contact{
+        display:block;
+    }
+    .navbar{
+        flex-direction: row;
+        height:max-content;
+    }
+    .card{
+        margin:10px;
+    }
+     .contact_img{
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+
+}
+    .bodyofsuccess {
+        background-color: aqua;
+
+    }
+
+    .fullbody {
+        height: 50vh;
+        width: 50%;
+        text-align: center;
+        margin: 10% auto;
+        border: 5px ridge rgb(130, 12, 239);
+        background-color: antiquewhite;
+    }
