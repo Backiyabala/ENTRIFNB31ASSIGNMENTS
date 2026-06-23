@@ -1,0 +1,165 @@
+/* It applies to whole body of the website */
+.fullposter{
+    height:max-content;
+    background: linear-gradient(135deg, #F8D7DA, #E6B8A2, #C88EA7);
+} 
+/* styles to the navbar section */
+ .navbar img, logo img{
+    height:50px;
+    width:50px;
+}
+.navbar .offcanvas{
+    background-color:rgb(24, 220, 158);
+    color:white;
+}
+.navbar ul{ 
+    list-style-type:none;
+}
+/* styles to hero section */
+.hero-image{
+    height: fit-content;
+    width: fit-content;
+    border-right:10px groove blue;
+    border-radius:50%;
+    background-color: #e24e09;
+    /* background-color: ; */
+}
+.hero-text{
+    text-align:start;
+}
+.hero-text p b{
+    color:orangered;
+    font-style: oblique;
+}
+.hero-text,.welcome{
+    font-style: normal;
+    font-family:"Cormorant Garamond",serif;
+}
+.Hero_section img{
+height:200px;
+width:200px;
+}
+/* styles to about section */
+.flowerquotes{
+    align-items:center;
+    border-radius: 0px 50px;
+    background-color:#d12285;
+    /* background-color: #e24e09; */
+    padding:20% 30%;
+    font-size:x-large;
+    font-family: "Dancing Script", cursive;
+    color:whitesmoke;
+    opacity:0.8;
+}
+/* style to image gallery section */
+h1{
+    border-bottom:2px dashed #d12285;
+    font-family: 'Times New Roman', Times, serif;
+}
+.list-group-flush .list-group-item{
+    background: transparent;
+    font-size: 25px;
+    border:none;
+}
+.categories{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:xx-large;
+}
+.items_group .row{
+    justify-content: space-around;
+} 
+.items_group .card{
+    align-items: center;
+    justify-content: center;
+    background-color:#e97bb9;
+    border-radius: 25px;
+    height:200px;
+    width:250px;
+}
+.items_group .card img{
+    border-radius:50px;
+    height: 100px;
+    width: 100px;
+}
+.items_group .card-body a{
+    text-decoration: none;
+}
+.garlandtypes .row{
+   align-items: center;
+   justify-content: space-evenly;
+}
+.garlandtypes .card img{
+  height:300px;
+}
+.garlandtypes .card .card-body {
+    justify-content: space-evenly;
+}
+#veni .card-body{
+    text-align: center;
+}
+.fa-star, .fa-star-half-stroke{
+color:orange;
+}
+ /* style to services*/
+  .Services_Section .card{
+    height:250px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    width:150px;
+    border-radius: 10%;
+    background-color:#d12285;
+    box-sizing: border-box;
+  }
+  .Services_Section .container .row{
+    flex-flow: row nowrap;
+    justify-content:center;
+
+  }
+ .Services_Section .card img{
+    border-radius:50px;
+    padding: 10%;
+ }
+ /* styles to Testimonial Section */
+ .Testimonial_section{
+    overflow-x: hidden;
+ }
+ .Testimonial_section .row{
+    flex-flow: row nowrap;
+ }
+ .Testimonial_section .card{
+    background-color: rgb(159, 209, 155);
+    height:200px;
+    box-shadow: border-box;
+    overflow-y: scroll;
+    border-radius: 5%;
+ }
+ .Testimonial_section .card .profile{
+    background-color:#d43c92;
+    border-radius: 50%;
+    height: fit-content;
+    width:fit-content;
+    padding: 10px;
+ }
+ .Testimonial_section .card a{
+    text-decoration: none;
+ }
+ /* styles to contact section */
+ .phone{
+    font-family: 'Courier New', Courier, monospace;
+ }
+/* styles to footer */
+.footpart{
+    justify-content: space-between;
+    /* position:relative; */
+}
+.fa-circle-arrow-up{
+    position:sticky;
+    bottom:0%;
+    left:90%;
+    height:5%;
+    width:5%;
+}
+
+
+
