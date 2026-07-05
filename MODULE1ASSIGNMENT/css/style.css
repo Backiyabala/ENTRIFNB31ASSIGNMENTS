@@ -1,0 +1,147 @@
+.container-fluid{
+    /* background-origin: border-box; */
+    height:fit-content;
+    background: linear-gradient(135deg, #00B09B, #96C93D);
+}
+/* styles to header part */
+logo img{
+    height:50px;
+    width:50px;
+}
+logo sup {
+    font-family:fantasy;
+    font-size:xx-small;
+    color:gold;
+}
+.navbar_section a{
+    color:white;
+    font-family: monospace;
+    font-size: bolder;
+}
+/* styles to hero section */
+hero{
+    position:relative;
+}
+hero img{
+    width:100%;
+    background-repeat: no-repeat;
+}
+hero button{
+    position:absolute;
+    top:-50%;
+    left:5%;
+    padding: 1%;
+    background-color: rgb(255, 215, 10, 70%);
+    font-size: larger;
+    font-weight: bold;
+    color:white ;
+    border: 5px ridge greenyellow;
+    border-radius: 1em;
+}
+hero button:active {
+    background-color: yellow;
+}
+/* styles to about section */
+about h1{
+    text-decoration:underline;
+}
+.aside{
+    display:flex;
+    overflow-x:scroll;
+}
+.aside .options{
+    background-color:hsl(42, 100%, 50%);
+    margin-right: 5px;
+    padding: 10px;
+    border:ridge;
+    border-radius: 20px 10px;
+    color:white;
+}
+about .card img{
+    height:150px;
+}
+about .card{
+    width:100px;
+}
+about .card2{
+    left:25px;
+    top:25px;
+}
+about .card3{
+    left: 35px;
+    top:35px;
+}
+/* styles to Destination section */
+main .card img{
+  height:200px;
+}
+/* styles to contact section */
+form{
+    background-color:hsl(42, 100%, 50%);
+    border: 5px solid rgba(255, 255, 255, 0.494);
+    padding-bottom:5% ;
+    font-family: Cambria;
+}
+.fa-astriks , form span{
+    color:orangered;
+}
+.call{
+    padding: 1%;
+    background-color: rgb(255, 215, 10, 70%);
+    font-size: larger;
+    font-weight: bold;
+    color: white;
+    border: 5px ridge greenyellow;
+    border-radius: 1em;
+    width:100%;
+}
+.fa-phone{
+    display:none;
+}
+/* styles to footer section */
+.footerimages{
+    display:flex;
+    text-align: center;
+    align-items: center;
+    justify-content:center ;
+}
+.footerimages img{
+    height:50px;
+    width:30px;
+}
+.footerimages p{
+    font-size:bolder;
+}
+
+
+
+@media screen and (max-width:768px){
+    hero button{
+        position:relative;
+        left:0;
+        width:100%;
+    }
+    .footerimages img {
+        height: 30px;
+        width: 30px;
+    }
+    .footerimages p {
+        font-size: x-small;
+    }
+}
+@media (min-width: 769px){
+    .call{
+        display:none;
+    }
+    .fa-phone{
+        display:block;
+        color:white;
+        background-color:green;
+        position:fixed;
+        bottom:70px;
+        right:30px;
+        padding: 30px;
+        border-radius: 50px;
+
+    }
+}
