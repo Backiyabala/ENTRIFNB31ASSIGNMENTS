@@ -1,0 +1,178 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    padding: 20px;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 650px;
+    padding: 40px;
+    background: #544ebd;
+    border-radius: 25px;
+    outline: 10px ridge rgb(176, 127, 176);
+
+}
+
+.calculator h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 35px;
+    color: #1f2937;
+}
+
+.InputField {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.InputField input {
+    width: 100%;
+    height: 40px;
+    border: 2px solid rgb(134, 119, 81);
+    border-radius: 12px;
+    padding: 0 15px;
+    font-size: 16px;
+    outline: none;
+    background-color: #f8fafc;
+    transition: all 0.3s ease;
+}
+
+.InputField input:focus {
+    border-color: goldenrod;
+    background-color: white;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12);
+}
+
+.InputField input::placeholder {
+    color: grey;
+}
+
+#operator {
+    height: 52px;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #374151;
+    background-color: #f8fafc;
+    transition: all 0.3s ease;
+}
+
+#operator:focus {
+    border-color: rgb(144, 117, 49);
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12);
+}
+
+/* Calculate Button */
+.calculator>.btn {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    padding: 13px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgb(140, 221, 140), rgb(67, 200, 67));
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgb(219, 187, 4);
+    transition: all 2s ease;
+}
+
+/* Calculate Hover */
+.calculator>.btn:hover {
+    transform: translate(3px);
+    box-shadow: 0 12px 25px rgba(16, 224, 37, 0.4);
+    background: darkgreen;
+}
+
+
+/* Result Section */
+.ResultField {
+    margin-top: 25px;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    border-radius: 15px;
+    background: #f3f4f6;
+    border: 1px solid #8498c3;
+}
+
+/* Result Text */
+#result {
+    margin: 0;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: white;
+    color: #111827;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Clear Button */
+.clear {
+    min-width: 90px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background: orangered;
+    color: white;
+    font-weight: 600;
+}
+
+/* Clear Hover */
+.clear:hover {
+    background: rgb(229, 18, 25);
+    color: white;
+    transform: translate(-2px);
+    box-shadow: 0px 6px 15px orangered;
+}
+
+
+/* Responsive Design */
+@media (max-width: 576px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .calculator {
+        padding: 25px 20px;
+    }
+
+    .calculator h1 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    .InputField {
+        gap: 12px;
+    }
+
+    .InputField .col-4,
+    .InputField .col-3 {
+        width: 100%;
+    }
+
+    .ResultField {
+        flex-direction: column;
+    }
+
+    .clear {
+        width: 100%;
+    }
+
+    #result {
+        width: 100%;
+    }
+}
