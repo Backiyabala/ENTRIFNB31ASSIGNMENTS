@@ -1,0 +1,11 @@
+{
+  "contacts": [
+    {
+      "name": "Backiya",
+      "phone": "234",
+      "email": "",
+      "id": "lo_D5N2KaXE"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

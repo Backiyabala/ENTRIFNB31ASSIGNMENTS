@@ -1,0 +1,147 @@
+/* Page */
+body {
+    font-family: Arial;
+    background-color: #bd93d0;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+}
+
+form{
+    background-color: #9f49c7;
+    margin: auto 15px;
+    align-content: center;
+    padding:0 20px ;
+    border-radius: 10px;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    margin: 8px 0 15px 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+    color:indigo;
+}
+
+/* Save button */
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Save Contact button */
+button[onclick="SaveData()"] {
+    background-color: green;
+    color: white;
+    margin: 5px 0 25px 110px;
+}
+
+button[onclick="SaveData()"]:hover {
+    background-color: #0f3309;
+    transform: translateY(5px);
+}
+
+/* Table */
+table {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+/* Table heading */
+th {
+    background-color: #082c52;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tbody tr:hover {
+    background-color: #eaf3ff;
+}
+
+.edit {
+    text-decoration: underline;
+    background-color: rgb(23, 89, 219);
+    color: #eee0e0;
+    margin-right: 5px;
+}
+
+.edit:hover {
+    color:rgb(239, 235, 234);
+}
+
+.delete {
+    text-decoration: underline;
+    background-color: #c13a48;
+    color: #d9cbcb;
+}
+
+.delete:hover {
+    color: #c82333;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    input[type="text"] {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    button[onclick="SaveData()"] {
+        margin-left: 0;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}
