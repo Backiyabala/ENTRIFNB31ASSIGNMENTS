@@ -1,0 +1,20 @@
+
+.container{
+    background-color: rgb(13, 11, 102);
+    color:white;
+}
+.card{
+    background: linear-gradient(135deg,
+        rgb(220, 222, 225),rgb(47, 47, 134));
+    color:white;
+    border-radius: 15px;
+}
+.btn{
+    transition:0.3s;
+    width:50%;
+    margin: auto;
+}
+.invalid-feedback{
+    color:rgb(210, 13, 13);
+    font-size: 15px;
+}
